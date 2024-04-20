@@ -1,0 +1,14 @@
+body {
+    width: 100vw;
+}
+
+.container {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+}
+
+.r1 {
+    width: 40%;
+    margin: auto;
+}
