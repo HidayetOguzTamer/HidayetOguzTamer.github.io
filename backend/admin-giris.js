@@ -2,6 +2,8 @@
 const firebaseConfig = {
     apiKey: "AIzaSyDmUHmAutU8W1kMXMcfqRVMOazTs9SNFcs",
     authDomain: "harummmw.firebaseapp.com",
+    databaseURL:
+        "https://harummmw-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: "harummmw",
     storageBucket: "harummmw.appspot.com",
     messagingSenderId: "686002002322",
