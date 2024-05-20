@@ -16,15 +16,15 @@ firebase.initializeApp(firebaseConfig);
 function createData() {
     // console.log(document.getElementById("yemek-katilim-evet").value);
 
-    let gun1_check = " ",
-        gun2_check = " ";
+    let sunumEvet = " ",
+        sunumHayir = " ";
 
     if (document.querySelector(".sunumEvet").checked) {
-        gun1_check = document.getElementById("sunumEvet").value;
+        sunumEvet = document.getElementById("sunumEvet").value;
     }
 
     if (document.querySelector(".sunumHayir").checked) {
-        gun2_check = document.getElementById("sunumHayir").value;
+        sunumHayir = document.getElementById("sunumHayir").value;
     }
 
     const newData = {
@@ -46,9 +46,12 @@ function createData() {
         merkezozet: document.getElementById("merkezozet").value,
 
         uniad: document.getElementById("uniad").value,
+
+        sunumEvet: sunumEvet,
+        sunumHayir: sunumHayir,
     };
 
-    firebase.database().ref("users5/").push(newData);
+    firebase.database().ref("users6/").push(newData);
 
     alert("Başarıyla Kayıt Edildi");
 

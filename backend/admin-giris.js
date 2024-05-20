@@ -42,7 +42,7 @@ function refresh() {
 // Read data
 firebase
     .database()
-    .ref("users4/")
+    .ref("users6/")
     .on("value", function (snapshot) {
         document.getElementById("showUsers").innerHTML = "";
         snapshot.forEach(function (childSnapshot) {
@@ -51,32 +51,36 @@ firebase
             let addDiv = document.createElement("tr");
             addDiv.className = "ekle";
             addDiv.innerHTML =
-                '  <td class="col-sm-2"     word-break: break-word;">' +
-                childData.name +
                 '  <td class="col-sm-1"     word-break: break-word;">' +
-                childData.email +
-                '  <td class="col-sm-1"     word-break: break-word;">' +
-                childData.telno +
-                '  <td class="col-sm-1"     word-break: break-word;">' +
-                childData.unvan +
+                childData.uniad +
                 '  <td class="col-sm-1"     word-break: break-word;">' +
                 childData.merkezad +
                 '  <td class="col-sm-2"     word-break: break-word;">' +
                 childData.merkezozet +
                 '  <td class="col-sm-2"     word-break: break-word;">' +
-                childData.adres +
-                '  <td class="col-sm"     word-break: break-word;">' +
-                childData.gun1 +
-                '  <td class="col-sm"     word-break: break-word;">' +
-                childData.gun2 +
-                '  <td class="col-sm"     word-break: break-word;">' +
-                childData.yemekkatilimEvet +
-                '  <td class="col-sm"     word-break: break-word;">' +
-                childData.yemekkatilimHayir +
+                childData.name1 +
+                '  <td class="col-sm-1"     word-break: break-word;">' +
+                childData.akademikunvan1 +
+                '  <td class="col-sm-1"     word-break: break-word;">' +
+                childData.idarigorev1 +
+                '  <td class="col-sm-1"     word-break: break-word;">' +
+                childData.telno +
                 '  <td class="col-sm-2"     word-break: break-word;">' +
-                childData.diyet +
+                childData.name2 +
+                '  <td class="col-sm-1"     word-break: break-word;">' +
+                childData.akademikunvan2 +
+                '  <td class="col-sm-1"     word-break: break-word;">' +
+                childData.idarigorev2 +
                 '  <td class="col-sm-2"     word-break: break-word;">' +
-                childData.alerji;
+                childData.name3 +
+                '  <td class="col-sm-1"     word-break: break-word;">' +
+                childData.akademikunvan3 +
+                '  <td class="col-sm-1"     word-break: break-word;">' +
+                childData.idarigorev3 +
+                '  <td class="col-sm"     word-break: break-word;">' +
+                childData.sunumEvet +
+                '  <td class="col-sm"     word-break: break-word;">' +
+                childData.sunumHayir;
             document.getElementById("showUsers").appendChild(addDiv);
         });
     });
