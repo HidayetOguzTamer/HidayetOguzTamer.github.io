@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+label {
+    font-family: "Fjalla One";
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
 body {
     background: url("../assets/img/kayit-formuu.jpg") center center no-repeat;
     background-size: cover;
