@@ -6,24 +6,6 @@
     <link rel="stylesheet" href="https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms.css" />
     <link rel="stylesheet" href="./kayit.css">
 
-    <!-- <style>
-        h2 {
-            text-align: center;
-        }
-
-        body {
-            width: 30%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-        }
-
-
-
-        button {
-
-            max-width: 100%;
-        }
     </style> -->
 
 </head>
@@ -57,43 +39,48 @@
 
     <div class="contact-us">
         <form>
-            <input placeholder="İsim Soyisim" id="name" required="" type="text" required />
-            <input name="E-mail Adresiniz" id="email" placeholder="Email" type="email" required />
-            <input name="Telefon Numaranız" id="telno" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                placeholder="Telefon Numaranız" type="tel" required />
+            <input placeholder="Üniversite Adı" id="uniad" required="" type="text" required />
             <input placeholder="Merkez Tam Adı" id="merkezad" required="" type="text" required />
             <input placeholder=" Merkez çalışmalarınız Kısaca" id="merkezozet" required="" type="text" required />
-            <input placeholder="Ünvan" id="unvan" required="" type="text" required />
-            <input placeholder="Adresiniz" required="" type="text" required id="adres" />
+
+            <!-- Kişi 1 -->
+            <input placeholder="İsim Soyisim" id="name1" required="" type="text" required />
+            <input placeholder="Akademik Ünvan" id="akademikunvan1" required="" type="text" required />
+            <input placeholder="İdari Görev" id="idarigorev1" required="" type="text" required />
+            <input name="Telefon Numaranız" id="telno" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="Telefon Numaranız" type="tel" required />
+
+            <hr>
+
+            <input placeholder="İsim Soyisim" id="name2" required="" type="text" required />
+            <input placeholder="Akademik Ünvan" id="akademikunvan2" required="" type="text" required />
+            <input placeholder="İdari Görev" id="idarigorev2" required="" type="text" required />
+
+            <hr>
+
+            <input placeholder="İsim Soyisim" id="name3" required="" type="text" required />
+            <input placeholder="Akademik Ünvan" id="akademikunvan3" required="" type="text" required />
+            <input placeholder="İdari Görev" id="idarigorev3" required="" type="text" required />
+
+
 
             <div class="checkbox-wrapper-24">
-                <input type="checkbox" id="gun1" name="gun1" value="1.gun" class="gun1" />
-                <label for="gun1">
-                    <span><!-- This span is needed to create the "checkbox" element --></span>1.gün
+                <input type="checkbox" id="sunumEvet" name="sunumEvet" value="sunumEvet" class="sunumEvet" />
+                <label for="sunumEvet">
+                    <span><!-- This span is needed to create the "checkbox" element --></span>Sunum Yapmayı Tercih
+                    Ediyorum
                 </label>
-                <input type="checkbox" id="gun2" name="gun2" value="2.gun" class="gun2" />
-                <label for="gun2">
-                    <span><!-- This span is needed to create the "checkbox" element --></span>2.gün
+                <input type="checkbox" id="sunumHayir" name="sunumHayir" value="sunumHayir" class="sunumHayir" />
+                <label for="sunumHayir">
+                    <span><!-- This span is needed to create the "checkbox" element --></span>Sunum Yapmayı Tercih
+                    Etmiyorum
                 </label>
+
             </div>
 
-            <div class="checkbox-wrapper-24" style="margin-bottom: 10px;">
-                <input type="checkbox" id="yemek-katilim-evet" name="yemek-katilim-evet" value="Evet"
-                    class="yemekEvet" />
-                <label for="yemek-katilim-evet">
-                    <span><!-- This span is needed to create the "checkbox" element --></span>Social Dinner 'a
-                    katılacağım
-                </label>
-                <input type="checkbox" id="yemek-katilim-hayir" name="yemek-katilim-hayir" value="Hayir"
-                    class="yemekhayır" />
-                <label for="yemek-katilim-hayir">
-                    <span><!-- This span is needed to create the "checkbox" element --></span>Social Dinner 'a
-                    katılmayacağım
-                </label>
-            </div>
-            <label for="">Aşağı Kısmı Social Dinner 'a katılacaksanız doldurunuz!</label>
-            <input placeholder="Diyet tipiniz(vejetaryen, pesketaryen vb.)" id="diyet" type="text" />
-            <input placeholder="Alerjileriniz" id="alerji" type="text" />
+            <br>
+
+
 
             <button type="button" onclick="createData()" id="save_btn">Kayıt Ol</button>
 

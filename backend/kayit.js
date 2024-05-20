@@ -17,43 +17,38 @@ function createData() {
     // console.log(document.getElementById("yemek-katilim-evet").value);
 
     let gun1_check = " ",
-        gun2_check = " ",
-        yemekEvet = " ",
-        yemekHayır = " ";
+        gun2_check = " ";
 
-    if (document.querySelector(".gun1").checked) {
-        gun1_check = document.getElementById("gun1").value;
+    if (document.querySelector(".sunumEvet").checked) {
+        gun1_check = document.getElementById("sunumEvet").value;
     }
 
-    if (document.querySelector(".gun2").checked) {
-        gun2_check = document.getElementById("gun2").value;
-    }
-
-    if (document.querySelector(".yemekEvet").checked) {
-        yemekEvet = document.getElementById("yemek-katilim-evet").value;
-    }
-
-    if (document.querySelector(".yemekhayır").checked) {
-        yemekHayır = document.getElementById("yemek-katilim-hayir").value;
+    if (document.querySelector(".sunumHayir").checked) {
+        gun2_check = document.getElementById("sunumHayir").value;
     }
 
     const newData = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
+        name1: document.getElementById("name1").value,
+        name2: document.getElementById("name2").value,
+        name3: document.getElementById("name3").value,
+
+        akademikunvan1: document.getElementById("akademikunvan1").value,
+        akademikunvan2: document.getElementById("akademikunvan2").value,
+        akademikunvan3: document.getElementById("akademikunvan3").value,
+
+        idarigorev1: document.getElementById("idarigorev1").value,
+        idarigorev2: document.getElementById("idarigorev2").value,
+        idarigorev3: document.getElementById("idarigorev3").value,
+
         telno: document.getElementById("telno").value,
+
         merkezad: document.getElementById("merkezad").value,
         merkezozet: document.getElementById("merkezozet").value,
-        unvan: document.getElementById("unvan").value,
-        adres: document.getElementById("adres").value,
-        gun1: gun1_check,
-        gun2: gun2_check,
-        yemekkatilimEvet: yemekEvet,
-        yemekkatilimHayir: yemekHayır,
-        diyet: document.getElementById("diyet").value,
-        alerji: document.getElementById("alerji").value,
+
+        uniad: document.getElementById("uniad").value,
     };
 
-    firebase.database().ref("users4/").push(newData);
+    firebase.database().ref("users5/").push(newData);
 
     alert("Başarıyla Kayıt Edildi");
 
