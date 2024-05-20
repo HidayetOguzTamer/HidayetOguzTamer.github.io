@@ -2,13 +2,15 @@
 const firebaseConfig = {
     apiKey: "AIzaSyDmUHmAutU8W1kMXMcfqRVMOazTs9SNFcs",
     authDomain: "harummmw.firebaseapp.com",
+    databaseURL:
+        "https://harummmw-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: "harummmw",
     storageBucket: "harummmw.appspot.com",
     messagingSenderId: "686002002322",
     appId: "1:686002002322:web:7b82db1a76251273fd894b",
     measurementId: "G-JTCGPWHFTM",
 };
-base.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 // Create a new data
 function createData() {
